@@ -1,0 +1,22 @@
+.Blogs_Page{
+
+    background-color: black;
+    color: #fff;
+    width: 100vw;
+}
+
+.blog_container{
+    max-width: 1140px;
+    /* width: 100%; */
+    padding: 0 15px;
+    /* margin: 0 10vw; */
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.Blogs-Banner-Img   {
+
+    height: 40vw;
+    width: 100vw;
+}

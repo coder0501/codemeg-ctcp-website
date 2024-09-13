@@ -1,0 +1,58 @@
+.blogs_carousel-container {
+    /* width: 100%; */
+
+    max-width: 1340px;
+    margin: 0 auto;
+    margin-right: 0px;
+    overflow: hidden;  
+    position: relative;
+    /* width: 100%; */
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+  }
+  
+  .carousel-item {
+    min-width: calc(90% / 3);
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .carousel-caption {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .carousel-caption p {
+    font-size: 0.85rem;
+  }
+  
+  .carousel-caption a {
+    text-decoration:underline;
+    color: rgba(212, 212, 212, 1);
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  .highlight_card_title{
+    color: rgba(241, 102, 34, 1);
+  }
+  

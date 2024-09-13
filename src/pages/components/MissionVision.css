@@ -1,0 +1,36 @@
+.mission-vision-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #000;
+    border-radius: 15px;
+  }
+  
+  .mission-box,
+  .vision-box {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+  }
+  
+  .title {
+    color: #ff6600;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .missionvision-icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .content {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  

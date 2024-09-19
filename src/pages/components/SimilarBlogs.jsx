@@ -1,14 +1,8 @@
-import React, { useRef, useState } from 'react';
-import './SimilarBlogs.css';
-import image from '../../assets/images/similar-blogs-img.jpg';
+import React, { useRef, useState } from "react";
+import "./SimilarBlogs.css";
+import image from "../../assets/images/similar-blogs-img.jpg";
 
-const images = [
-  image,
-  image,
-  image,
-  image,
-  image,
-]
+const images = [image, image, image, image, image];
 const SimilarBlogs = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
@@ -29,30 +23,41 @@ const SimilarBlogs = () => {
   };
 
   return (
-    <div
-      className="blogs_carousel-container"
-      ref={carouselRef} 
-      onMouseDown={handleDragStart}
-      onMouseUp={handleDragEnd}
-    >
+    <section> 
       <div
-        className="carousel-track"
-        style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
+        className="blogs_carousel-container"
+        ref={carouselRef}
+        onMouseDown={handleDragStart}
+        onMouseUp={handleDragEnd}
       >
-        {images.map((image, index) => (
-          <div className="carousel-item" key={index}>
-            <img src={image} alt={`Carousel ${index}`} />
-            <div className="carousel-caption">
-              <h3><span className="highlight_card_title">Career Development</span></h3>
-              <p>5 Essential Soft Skills Every Graduate Needs for Corporate Success</p>
-              <a href="#">
-                Read Blog →
-              </a>
+        
+        <div className="blogs_carousel-heading">
+          <h3>Similar Blogs</h3>
+        </div>
+        <div
+          className="carousel-track"
+          style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
+        >
+          {images.map((image, index) => (
+            <div className="carousel-item" key={index}>
+              <img src={image} alt={`Carousel ${index}`} />
+              <div className="carousel-caption">
+                <h3>
+                  <span className="highlight_card_title">
+                    Career Development
+                  </span>
+                </h3>
+                <p>
+                  5 Essential Soft Skills Every Graduate Needs for Corporate
+                  Success
+                </p>
+                <a href="#">READ BLOG →</a>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -9,6 +9,11 @@
     /* width: 100%; */
   }
   
+  .blogs_carousel-heading{
+    display: block;
+    padding: 40px 0px;
+  }
+
   .carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -29,7 +34,6 @@
   }
   
   .carousel-caption {
-    background-color: #000;
     color: #fff;
     padding: 10px;
     border-radius: 5px;

@@ -1,0 +1,204 @@
+/* Container for timeline */
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* width: 20px; Adjust as needed */
+    height: 100%;
+}
+
+/* Default timeline line */
+.timeline_line {
+    background-color: rgba(255, 255, 255, 0.2); /* Default color */
+    width: 1px;
+    height: 25rem; /* Length of the timeline between courses */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Highlighted state when the course is clicked */
+.timeline_line.highlighted {
+    background: linear-gradient(rgba(64, 16, 0, 1), rgba(241, 102, 34, 1));
+}
+
+/* Other existing styles */
+.home_courses_container {
+    max-width: 1140px;
+    margin: 60px auto;
+}
+
+.courses_heading_text {
+    text-align: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    /* line-height: 2px; */
+    width: 37rem;
+    font-family: 'Inter Normal';
+}   
+
+.courses_list {
+    margin-top: 100px;
+}
+
+.courses_list_row {
+    display: flex;
+    align-items: center; /* Align course and timeline vertically */
+    gap: 78px;
+}
+
+.blank_space {
+    width: 50%;
+    /* padding: 198px 246px; */
+}
+
+.course_title h3 {
+    padding: 20px 0px;
+    margin: 0;
+    text-align: center;
+}
+
+.course_content_img {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.view_all_courses {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.view_all_courses_btn {
+    border-radius: 40px;
+    border: 1px solid;
+    color: rgba(241, 102, 34, 1);
+    background-color: rgba(255, 66, 0, 0.1);
+}
+
+/* .courses_text_p {
+    line-height: 10px;
+} */
+
+/* Media Query for screens 1024px and below */
+@media screen and (max-width: 1024px) {
+    .course{
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+    .courses_heading_text {
+      padding: 0 20px;
+      width: 76%;
+      font-size: 30px;
+    }
+  
+    .courses_heading_text h1{
+      font-size: 50px;
+    }
+    .courses_list_row {
+        display: block;
+    }
+  
+    .blank_space {
+        display: none; /* Hide blank space on mobile */
+        /* padding: 150px 100px; Adjust blank space */
+    }
+  
+    .timeline_line {
+        display: none; /* Hide blank space on mobile */
+
+      height: 18rem; /* Shorten timeline */
+    }
+  }
+  
+  /* Media Query for screens 991px and below */
+  @media screen and (max-width: 991px) {
+    .home_courses_container {
+      max-width: 100%; /* Full width container */
+      margin: 40px auto; /* Adjust margin */
+    }
+  
+    .courses_list_row {
+      gap: 40px; /* Decrease gap further */
+    }
+  
+    .blank_space {
+        display: none; /* Hide blank space on mobile */
+
+      /* padding: 120px 80px; Further reduce blank space */
+    }
+  
+    .timeline_line {
+        display: none; /* Hide blank space on mobile */
+
+      height: 15rem; /* Adjust timeline height */
+    }
+  
+    .view_all_courses_btn {
+      font-size: 14px; /* Adjust button text size */
+      padding: 10px 20px; /* Adjust button padding */
+    }
+  }
+  
+  /* Media Query for screens 768px and above */
+  @media screen and (min-width: 768px) {
+    .home_courses_container {
+      padding: 0 40px;
+    }
+  
+    /* .blank_space {
+      padding: 100px 60px;
+    } */
+    
+    .courses_heading {
+      font-size: 30px; /* Adjust heading size */
+    }
+  
+    /* .courses_list_row {
+      gap: 30px; 
+    } */
+  
+    /* .timeline_line {
+      width: 3px;
+      height: 12rem; 
+    } */
+  }
+  
+  /* Media Query for screens 767px and below */
+  @media screen and (max-width: 767px) {
+    .courses_heading_text {
+      padding: 0 10px;
+    }
+  
+    .home_courses_container {
+      margin: 20px auto; /* Reduce margin */
+    }
+  
+    .courses_heading {
+      font-size: 24px; /* Adjust heading size */
+    }
+  
+    .courses_list_row {
+      gap: 20px;
+      flex-direction: column; /* Stack course elements vertically */
+    }
+  
+    .timeline {
+      display: none; /* Hide timeline on small screens */
+    }
+  
+    .blank_space {
+      display: none; /* Hide blank space on mobile */
+    }
+  
+    .view_all_courses_btn {
+      font-size: 12px;
+      padding: 8px 16px; /* Smaller button for mobile */
+    }
+
+    .course_duration{
+        width: 60%;
+    }
+  }
+  

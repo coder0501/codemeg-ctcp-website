@@ -1,21 +1,15 @@
 
 
 .home-page{
-    /* background-color:black;
-    width: 100%; */
-    background-color: black;
+    background-color: rgba(0, 0, 0, 1);
     color: #fff;
-    width: 100vw;
-}
-
-.homepage_container{
-    max-width: 1140px;
-    width: 100%; 
-    /* height: 100vh; */
-    padding: 0 15px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .highlight_title{
     color: #ff6600;
   }
+
+p{
+  color: rgba(163, 163, 163, 1);
+}

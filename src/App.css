@@ -1,53 +1,127 @@
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('./assets/font/DMSans-Regular.eot');
+  src: url('./assets/font/DMSans-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./assets/font/DMSans-Regular.woff') format('woff'),
+      url('./assets/font/DMSans-Regular.ttf') format('truetype'),
+      url('./assets/font/DMSans-Regular.svg#DMSans-Regular') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans Medium';
+  src: url('./assets/font/DMSans-Medium.eot');
+  src: url('./assets/font/DMSans-Medium.eot?#iefix') format('embedded-opentype'),
+      url('./assets/font/DMSans-Medium.woff') format('woff'),
+      url('./assets/font/DMSans-Medium.ttf') format('truetype'),
+      url('./assets/font/DMSans-Medium.svg#DMSans-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans Black';
+  src: url('./assets/font/DMSans-Black.eot');
+  src: url('./assets/font/DMSans-Black.eot?#iefix') format('embedded-opentype'),
+      url('./assets/font/DMSans-Black.woff') format('woff'),
+      url('./assets/font/DMSans-Black.ttf') format('truetype'),
+      url('./assets/font/DMSans-Black.svg#DMSans-Black') format('svg');
+  font-weight: 900;
+  /* font-style: normal; */
+  /* font-display: swap; */
+}
+
+@font-face {
+  font-family: 'DM Sans Bold';
+  src: url('./assets/font/DMSans-Bold.eot');
+  src: url('./assets/font/DMSans-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/font/DMSans-Bold.woff') format('woff'),
+      url('./assets/font/DMSans-Bold.ttf') format('truetype'),
+      url('./assets/font/DMSans-Bold.svg#DMSans-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans Thin';
+  src: url('./assets/font/DMSans-Thin.eot');
+  src: url('./assets/font/DMSans-Thin.eot?#iefix') format('embedded-opentype'),
+      url('./assets/font/DMSans-Thin.woff') format('woff'),
+      url('./assets/font/DMSans-Thin.ttf') format('truetype'),
+      url('./assets/font/DMSans-Thin.svg#DMSans-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans Light';
+  src: url('./assets/font/DMSans-Light.eot');
+  src: url('./assets/font/DMSans-Light.eot?#iefix') format('embedded-opentype'),
+      url('./assets/font/DMSans-Light.woff') format('woff'),
+      url('./assets/font/DMSans-Light.ttf') format('truetype'),
+      url('./assets/font/DMSans-Light.svg#DMSans-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Bold';
+  src: url('./assets/font/Inter-Bold.eot');
+  src: url('./assets/font/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/font/Inter-Bold.woff') format('woff'),
+      url('./assets/font/Inter-Bold.ttf') format('truetype'),
+      url('./assets/font/Inter-Bold.svg#Inter-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Medium';
+  src: url('./assets/font/Inter-Medium.eot');
+  src: url('./assets/font/Inter-Medium.eot?#iefix') format('embedded-opentype'),
+      url('./assets/font/Inter-Medium.woff') format('woff'),
+      url('./assets/font/Inter-Medium.ttf') format('truetype'),
+      url('./assets/font/Inter-Medium.svg#Inter-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Black';
+  src: url('./assets/font/Inter-Black.eot');
+  src: url('./assets/font/Inter-Black.eot?#iefix') format('embedded-opentype'),
+      url('./assets/font/Inter-Black.woff') format('woff'),
+      url('./assets/font/Inter-Black.ttf') format('truetype'),
+      url('./assets/font/Inter-Black.svg#Inter-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Normal';
+  src: url('./assets/font/Inter-Regular.eot');
+  src: url('./assets/font/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./assets/font/Inter-Regular.woff') format('woff'),
+      url('./assets/font/Inter-Regular.ttf') format('truetype'),
+      url('./assets/font/Inter-Regular.svg#Inter-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 #root {
-  max-width: 1140px;
+  /* max-width: 1140px;
   width: 100%; 
-  height: 100vh;
-  /* margin: 0 auto; */
- /* padding: 0 15px; */
+  height: 100vh; */
 }
 
-/* .App {
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-} */
-
-/* body{
-  background-color: #000000;
-} */
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}

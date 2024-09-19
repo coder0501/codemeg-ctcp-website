@@ -1,0 +1,42 @@
+.why-choose-codemeg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust height as needed */
+    /* background-image: url('../../assets/images/why-choose-codemeg.jpg');  */
+    /* background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    width: 100%;
+    /* position: relative;
+    z-index: 1;
+    background-color: rgba(255, 66, 0, 0.2); */
+  
+    /* position: relative; */
+  }
+  
+  .why-choose-codemeg::before {
+    background-image: url('../../assets/images/why-choose-codemeg1.png'); 
+    /*    width: 100%; */
+    /* z-index: -1;    position: relative;
+
+    background-image: url('../../../assets/images/why-choose-codemeg.jpg');  */
+
+    /* height: ;   */
+    /* content: "";
+    background: radial-gradient(57.74% 58.52% at 50% 39.1%, rgb(0 0 0 / 63%) 0%, #000000 100%);
+    position: absolute;
+    inset: 0; */
+  }
+  
+  .why-choose-codemeg h1 {
+    font-size: 40px;
+    color: #fff; /* Adjust color if necessary */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .why-choose-codemeg{
+      text-align: center;
+    }
+  }

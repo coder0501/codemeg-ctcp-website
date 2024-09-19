@@ -1,0 +1,144 @@
+.placed_students_section {
+    background-color: rgba(10, 10, 10, 1);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .placed-students-container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .carousel-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-card {
+    width: 180px;
+    margin: 0 10px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+  }
+  
+  .carousel-main{
+    padding: 50px 0px;
+  }
+
+  .carousel-card.active {
+    transform: scale(1.1); /* Center card zoomed */
+  }
+  
+  
+  .sofwave-text {
+    position: absolute;
+    top: -41px;
+    left: -40px;
+    /* transform: rotate(-15deg); */
+    /* background: #fff; */
+    /* color: #000; */
+    padding: 0px 16px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .image-placeholder img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .student-info {
+    border-radius: 5px;
+    text-align: left;
+  }
+  .student-info p{
+    margin: 0;
+  }
+
+  .student-name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .student-role {
+    font-size: 12px;
+  }
+  
+  .carousel-dots {
+    margin-top: 20px;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active-dot {
+    background-color: #ff6600;
+  }
+  
+  /* Navigation Buttons */
+  .carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .carousel-nav.left {
+    left: 10px;
+  }
+  
+  .carousel-nav.right {
+    right: 10px;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 1024px) {
+    .carousel-card {
+      width: 160px;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    .carousel-card {
+      width: 140px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .carousel-card {
+      width: 180px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .carousel-wrapper {
+      flex-direction: column;
+    }
+  
+    .carousel-card {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
